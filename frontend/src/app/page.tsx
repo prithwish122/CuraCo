@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'; // Import the Navbar component
 import React, { useState, useEffect } from 'react';
 import { BrowserProvider, ethers } from "ethers";
 import CampaignABI from "./contractsData/ContractABI.json";
-import ContractAddress from "./contractsData/ContractAddress.json";
+import ContractAddress from "./contractsData/contractAddress.json"
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false);
@@ -113,7 +113,7 @@ const Home = () => {
               <div key={index} className="bg-gradient-to-r from-violet-600 to-violet-800 p-6 rounded-lg shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
                 <h3 className="text-xl font-bold mb-2 text-white">{campaign.title}</h3>
                 <p className="mb-2 text-gray-300">{campaign.description}</p>
-                <p className="mb-2 text-gray-300">Amount Required: <span className="text-green-400">{ethers.formatEther(campaign.amountRequired.toString())} AIA</span></p>
+                <p className="mb-2 text-gray-300">Amount Required: <span className="text-green-400">{parseInt(ethers.formatEther(campaign.amountRequired.toString())) - parseInt(ethers.formatEther(campaign.amountCollected.toString()))} AIA</span></p>
                 <p className="mb-4 text-gray-300">Amount Donated: <span className="text-green-400">{ethers.formatEther(campaign.amountCollected.toString())} AIA</span></p>
 
                 {/* Input for donation amount */}
