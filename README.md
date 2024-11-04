@@ -49,7 +49,7 @@
 To start the development server and run the project locally:
 
 ```bash
-npm start
+npm run dev
 ```
 
 Open your browser and navigate to `http://localhost:3000` to see the application in action.
