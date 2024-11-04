@@ -1,4 +1,4 @@
-﻿# LOTTY TOTTY
+﻿# CuraCo
 
  ## Vision :
  
