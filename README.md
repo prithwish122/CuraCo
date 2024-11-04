@@ -18,7 +18,7 @@
 
 ## TECH STACK :
 
-**React**
+**NextJS**
 **Hardhat**
 **NodeJs**
 
